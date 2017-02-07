@@ -38,7 +38,8 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title">EFS</div>
+                <div class="sub title">Laravel 5</div>
             </div>
         </div>
     </body>
