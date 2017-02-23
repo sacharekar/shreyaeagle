@@ -10,6 +10,12 @@ use App\Customer;
 
 class StockController extends Controller
 {
+
+    /*public function __construct()
+    {
+        $this->middleware('auth');
+    }*/
+
     public function index()
     {
         //
@@ -74,4 +80,3 @@ class StockController extends Controller
         return redirect('stocks');
     }
 }
-

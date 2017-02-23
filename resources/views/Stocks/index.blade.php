@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-    <h1>Stocks</h1>
+    <h1>Stock</h1>
     <a href="{{url('/stocks/create')}}" class="btn btn-success">Create Stock</a>
     <hr>
     <table class="table table-striped table-bordered table-hover">

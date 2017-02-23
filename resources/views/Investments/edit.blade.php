@@ -11,23 +11,27 @@
         {!! Form::text('description',null,['class'=>'form-control']) !!}
     </div>
     <div class="form-group">
-        {!! Form::label('acquired_value', 'Acquired Value:') !!}
+        {!! Form::label('acquired_value', 'Acquired value:') !!}
         {!! Form::text('acquired_value',null,['class'=>'form-control']) !!}
     </div>
+
     <div class="form-group">
         {!! Form::label('acquired_date', 'Acquired Date:') !!}
         {!! Form::text('acquired_date',null,['class'=>'form-control']) !!}
     </div>
+
     <div class="form-group">
-        {!! Form::label('recent_value', 'Recent Value:') !!}
+        {!! Form::label('recent_value', 'Recent value:') !!}
         {!! Form::text('recent_value',null,['class'=>'form-control']) !!}
     </div>
+
     <div class="form-group">
         {!! Form::label('recent_date', 'Recent Date:') !!}
         {!! Form::text('recent_date',null,['class'=>'form-control']) !!}
     </div>
+
     <div class="form-group">
-        {!! Form::submit('Update', ['class' => 'btn btn-primary']) !!}
+        {!! Form::submit('Save', ['class' => 'btn btn-primary form-control']) !!}
     </div>
     {!! Form::close() !!}
 @stop

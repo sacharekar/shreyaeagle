@@ -2,18 +2,23 @@
 
 namespace App\Http\Controllers;
 
+use App\Investment;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use App\Investment;
-use App\Customer;
 
+use App\Customer;
 class InvestmentController extends Controller
 {
+   /* public function __construct()
+    {
+        $this->middleware('auth');
+    }*/
+
     public function index()
     {
         //
-        $investments=Investment::all();
+        $investments=investment::all();
         return view('investments.index',compact('investments'));
     }
 
@@ -61,7 +66,7 @@ class InvestmentController extends Controller
      */
     public function update($id,Request $request)
     {
-        //
+
         $investment= new Investment($request->all());
         $investment=Investment::find($id);
         $investment->update($request->all());
@@ -73,6 +78,5 @@ class InvestmentController extends Controller
         Investment::find($id)->delete();
         return redirect('investments');
     }
+
 }
-
-

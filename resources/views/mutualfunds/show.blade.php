@@ -1,29 +1,29 @@
 @extends('app')
 @section('content')
-    <h1>MutualFund </h1>
+    <h1>Stock </h1>
     <div class="container">
         <table class="table table-striped table-bordered table-hover">
             <tbody>
             <tr class="bg-info">
             <tr>
-                <td>Mutual Fund Beneficiary</td>
-                <td><?php echo ($mutualfund['beneficiary']); ?></td>
+                <td>Stock Symbol</td>
+                <td><?php echo ($mutualfund['symbol']); ?></td>
             </tr>
             <tr>
-                <td>Type of Fund</td>
-                <td><?php echo ($mutualfund['type_of_fund']); ?></td>
+                <td>Stock Name</td>
+                <td><?php echo ($mutualfund['name']); ?></td>
             </tr>
             <tr>
                 <td>Number of Shares</td>
-                <td><?php echo ($mutualfund['number_of_funds']); ?></td>
+                <td><?php echo ($mutualfund['volume']); ?></td>
             </tr>
             <tr>
                 <td>Purchase Price </td>
                 <td><?php echo ($mutualfund['purchase_price']); ?></td>
             </tr>
             <tr>
-                <td>Purchase Date</td>
-                <td><?php echo ($mutualfund['purchased_date']); ?></td>
+                <td>Date Purchased</td>
+                <td><?php echo ($mutualfund['purchased']); ?></td>
             </tr>
             </tbody>
         </table>

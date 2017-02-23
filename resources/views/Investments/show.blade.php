@@ -1,6 +1,6 @@
 @extends('app')
 @section('content')
-    <h1>Investment </h1>
+    <h1>Stock </h1>
     <div class="container">
         <table class="table table-striped table-bordered table-hover">
             <tbody>
@@ -21,6 +21,7 @@
                 <td>Acquired Date</td>
                 <td><?php echo ($investment['acquired_date']); ?></td>
             </tr>
+
             <tr>
                 <td>Recent Value</td>
                 <td><?php echo ($investment['recent_value']); ?></td>
@@ -29,6 +30,8 @@
                 <td>Recent Date</td>
                 <td><?php echo ($investment['recent_date']); ?></td>
             </tr>
+
+
             </tbody>
         </table>
     </div>

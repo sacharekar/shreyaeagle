@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Customer extends Model
 {
-    //
     protected $fillable=[
         'name',
         'address',
@@ -18,7 +17,6 @@ class Customer extends Model
         'home_phone',
         'cell_phone',
     ];
-
     public function stocks() {
         return $this->hasMany('App\Stock');
 
@@ -30,6 +28,9 @@ class Customer extends Model
 
     }
 
+    public function mutualfunds() {
+        return $this->hasMany('App\mutualfunds');
+
+    }
 
 }
-

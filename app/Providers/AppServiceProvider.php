@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Customer;
 use Illuminate\Support\ServiceProvider;
+use App\Stock;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+
     }
 
     /**
